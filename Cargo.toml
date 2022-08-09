@@ -1,0 +1,28 @@
+[package]
+name = "chimtool"
+authors = ["Evan Reeves <evanreeves22@gmail.com>"]
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+axum = "0.5.13"
+bencher = "0.1.5"
+cedict = "0.2.3"
+clap = { version = "3.2.16", features = ["derive"] }
+cpython = "0.7.0"
+hyper = "0.14.20"
+num = "0.4.0"
+tokio =  {version = "1.20.1", features = ["full"] }
+tower = "0.4.13"
+tracing = "0.1.36"
+tracing-subscriber = "0.3.15"
+utf8_slice = "1.0.0"
+
+[build-dependencies]
+copy_to_output = "2.0.0"
+
+[[bench]]
+name = "bench"
+harness = false
