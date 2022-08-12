@@ -14,6 +14,7 @@ clap = { version = "3.2.16", features = ["derive"] }
 cpython = "0.7.0"
 hyper = "0.14.20"
 num = "0.4.0"
+render = "0.3.1"
 tokio =  {version = "1.20.1", features = ["full"] }
 tower = "0.4.13"
 tracing = "0.1.36"

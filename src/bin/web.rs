@@ -1,8 +1,10 @@
 #![feature(io_error_more)]
 use axum::{
-    routing::{get}, Router,
+    routing::{get}, Router, response::Html,
 };
+use render::{html, rsx};
 use std::net::SocketAddr;
+use render;
 
 #[tokio::main]
 async fn main() {
@@ -20,6 +22,17 @@ async fn main() {
 }
 
 // basic handler that responds with a static string
-async fn root() -> &'static str {
-    "Hello, World!"
+async fn root() -> Html<String> {
+
+
+    let world = "World!";
+    Html::from(html! {
+        <html>
+          <head><title>{"chim_tool"}</title></head>
+          <body>
+            {format!("Hello {}", world)}
+          </body>
+        </html>
+    })
+
 }

@@ -15,5 +15,8 @@ Tokenization reference
 https://www.ijcai.org/Proceedings/91-2/Papers/061.pdf
 
 Immediate TODO:
-Improve accuracy of tokenizer with some grammar
-Better jsx-like option for html. (research axum more) Not really worth doing manually
+- Improve accuracy of tokenizer with some grammar
+- Better jsx-like option for html. -render
+ 
+Ideas:
+- search engine/web scraper for tesxxts
